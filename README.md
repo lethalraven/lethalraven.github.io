@@ -2,7 +2,7 @@
 
 
 <!-- T![Project Image](url_to_project_image) -->
-> A brief description of your portfolio website.
+
 
 ---
 
