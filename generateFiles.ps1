@@ -34,8 +34,13 @@ $JSContent += "export default $COMPONENT_NAME;"
 $JSPath = Join-Path $DIRECTORY "$COMPONENT_NAME.jsx"
 $JSContent | Out-File -FilePath $JSPath -Encoding UTF8
 
+
 # Create CSS file
+$CSSContent = ".$COMPONENT_NAME {`r`n"
+$CSSContent += "`r`n"
+$CSSContent += "}"
+
 $CSSPath = Join-Path $DIRECTORY "$COMPONENT_NAME.css"
-New-Item -ItemType File -Path $CSSPath
+$CSSContent | Out-File -FilePath $CSSPath -Encoding UTF8
 
 Write-Host "Component '$COMPONENT_NAME' created in 'src\$DESTINATION\'."
