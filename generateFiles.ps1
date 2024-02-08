@@ -20,13 +20,13 @@ $DIRECTORY = "src\$DESTINATION\$COMPONENT_NAME"
 mkdir -p $DIRECTORY
 
 # Create JS/JSX file
-$JSContent = "import './$COMPONENT_NAME.css';`r`n"
+$JSContent = "import `"./$COMPONENT_NAME.css`";`r`n"
 $JSContent += "`r`n"
 $JSContent += "const $COMPONENT_NAME = () => {`r`n"
-$JSContent += "    return (`r`n"
-$JSContent += "        <div className=`"$COMPONENT_NAME`">`r`n"
-$JSContent += "        </div>`r`n"
-$JSContent += "    );`r`n"
+$JSContent += "  return (`r`n"
+$JSContent += "    <div className=`"$COMPONENT_NAME`">`r`n"
+$JSContent += "    </div>`r`n"
+$JSContent += "  );`r`n"
 $JSContent += "};`r`n"
 $JSContent += "`r`n"
 $JSContent += "export default $COMPONENT_NAME;"

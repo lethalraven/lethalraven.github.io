@@ -1,9 +1,10 @@
-----
+---
+
 # Liam's Portfolio Website
 
 <!-- T![Project Image](url_to_project_image) -->
 
-----
+---
 
 ## Table of Contents
 
@@ -11,7 +12,7 @@
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 
-----
+---
 
 ## About
 
@@ -23,9 +24,10 @@ Welcome to my portfolio website! I'm Liam, a graduate Information Engineer based
 - **Learn About Me:** Get to know more about my background, skills, and what drives me in my professional journey.
 - **Contact Information:** Interested in working together? Feel free to reach out using the contact details provided.
 
-----
+---
 
 ## Features
+
 <!--
 Explore the unique features that make my portfolio stand out:
 
@@ -37,7 +39,8 @@ Explore the unique features that make my portfolio stand out:
 
 Feel free to explore and engage with the content. I hope you find inspiration and insights into my skills and projects!
 -->
-----
+
+---
 
 ## Technologies Used
 
@@ -46,4 +49,4 @@ Feel free to explore and engage with the content. I hope you find inspiration an
 - JavaScript
 - React
 
-----
+---

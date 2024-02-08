@@ -1,20 +1,18 @@
-import './App.css';
+import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Root from './utils/Root';
-import Home from './pages/Home/Home'
-import About from './pages/About/About';
-import Error from './pages/Error/Error'
+import MainPageLayout from "./pages/MainPageLayout/MainPageLayout";
+import LandingPage from "./pages/LandingPage/LandingPage"
+import HomePage from "./pages/HomePage/HomePage";
+import AboutPage from "./pages/AboutPage/AboutPage";
+import SkillsPage from "./pages/SkillsPage/SkillsPage";
+import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Root />,
-    errorElement: <Error/>,
-    children: [
-      { index: true, element: <Home />, },
-      { path: "about", element: <About />, },
-    ],
-  },
+  { path: "/", element: <MainPageLayout> <LandingPage /> </MainPageLayout>, },
+  { path: "/home", element: <MainPageLayout> <HomePage /> </MainPageLayout>, },
+  { path: "/about", element: <MainPageLayout> <AboutPage /> </MainPageLayout>, },
+  { path: "/skills", element: <MainPageLayout> <SkillsPage /> </MainPageLayout>, },
+  { path: "/projects", element: <MainPageLayout> <ProjectsPage /> </MainPageLayout>, },
 ]);
 
 function App() {
@@ -26,5 +24,3 @@ function App() {
 }
 
 export default App;
-
-

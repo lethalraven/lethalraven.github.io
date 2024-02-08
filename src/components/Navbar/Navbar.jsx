@@ -18,7 +18,8 @@ const Navbar = () => {
   return (
     <div className="Navbar">
       <ul>
-        <NavbarButton to="/" text="Home" />
+        <NavbarButton to="/" text="Welcome" />
+        <NavbarButton to="/Home" text="Home" />
         <NavbarButton to="/about" text="About" />
       </ul>
     </div>
