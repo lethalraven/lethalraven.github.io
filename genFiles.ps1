@@ -10,7 +10,7 @@ if (-not $NAME) {
     exit 1
 }
 
-if (-not $DESTINATION -or ($DESTINATION -ne "components" -and $DESTINATION -ne "pages")) {
+if (-not $DESTINATION -or ($DESTINATION -ne "components" -and $DESTINATION -ne "pages" -and $DESTINATION -ne "utils")) {
     Write-Host "Please provide a valid destination (components or pages)."
     exit 1
 }
@@ -19,7 +19,7 @@ $DIRECTORY = "src\$DESTINATION\$NAME"
 
 mkdir -p $DIRECTORY
 
-$TSXContent = "interface ${NAME}Props {}`r`n"
+$TSXContent = "interface ${NAME}Props {};`r`n"
 $TSXContent += "`r`n"
 $TSXContent += "const ${NAME}: React.FC<${NAME}Props> = () => {`r`n"
 $TSXContent += "  return (`r`n"

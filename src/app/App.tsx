@@ -5,7 +5,7 @@ const router = createBrowserRouter([
   { path: "/", element: <LandingPage />, },
 ]);
 
-interface AppProps {}
+interface AppProps {};
 
 const App: React.FC<AppProps> = () => {
   return (
