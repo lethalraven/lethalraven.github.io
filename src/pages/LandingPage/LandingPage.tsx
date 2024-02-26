@@ -1,4 +1,6 @@
-const LandingPage: React.FC = () => {
+interface LandingPageProps {}
+
+const LandingPage: React.FC<LandingPageProps> = () => {
   return (
     <div className="LandingPage">
       <h1>Hi, I'm</h1>

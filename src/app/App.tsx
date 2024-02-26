@@ -1,11 +1,13 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import LandingPage from "./pages/LandingPage";
+import { LandingPage } from "@pages/LandingPage";
 
 const router = createBrowserRouter([
   { path: "/", element: <LandingPage />, },
 ]);
 
-const App: React.FC = () => {
+interface AppProps {}
+
+const App: React.FC<AppProps> = () => {
   return (
     <div className="App">
       <RouterProvider router={router} />
