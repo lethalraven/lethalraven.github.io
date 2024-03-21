@@ -1,13 +1,8 @@
-import { ReactNode } from "react";
+interface FooterProps {};
 
-interface FooterProps {
-  children: ReactNode;
-};
-
-const Footer: React.FC<FooterProps> = ({children}) => {
+const Footer: React.FC<FooterProps> = () => {
     return (
       <div className="Footer">
-        {children}
       </div>
     );
   };

@@ -1,8 +1,11 @@
-﻿interface HeaderProps {};
+﻿import { Navbar } from "components/Navbar";
+
+interface HeaderProps {};
 
 const Header: React.FC<HeaderProps> = () => {
   return (
-    <div className="Header">
+    <div className="Header"> 
+      <Navbar />
     </div>
   );
 };

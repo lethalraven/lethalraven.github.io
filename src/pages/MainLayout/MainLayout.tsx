@@ -1,18 +1,15 @@
-﻿import { ReactNode } from "react";
-import { Header } from "@components/Header";
-import { Navbar } from "@components/Navbar";
+﻿import { Outlet } from "react-router-dom";
+import { Header } from "components/Header";
+import { Footer } from "components/Footer";
 
-interface MainLayoutProps {
-  children: ReactNode;
-};
+interface MainLayoutProps {};
 
-const MainLayout: React.FC<MainLayoutProps> = ({children}) => {
+const MainLayout: React.FC<MainLayoutProps> = () => {
   return (
     <div className="MainLayout">
-      <Header>
-        <Navbar />
-      </Header>
-      <div>{children}</div>
+      <Header />
+      <Outlet />
+      <Footer />
     </div>
   );
 };

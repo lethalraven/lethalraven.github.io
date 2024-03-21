@@ -35,5 +35,5 @@ $TSXContent | Out-File -FilePath $TSXPath -Encoding UTF8 -NoNewline
 
 $TSContent = "export { default as ${NAME} } from `"./${NAME}`";"
 
-$TSPath = Join-Path $DIRECTORY "index.ts"
+$TSPath = Join-Path $DIRECTORY "index.tsx"
 $TSContent | Out-File -FilePath $TSPath -Encoding UTF8 -NoNewline

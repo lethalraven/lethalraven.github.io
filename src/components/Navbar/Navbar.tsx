@@ -1,7 +1,5 @@
 ﻿import { Link } from "react-router-dom";
-import { Button } from "@components/Button";
-
-
+import { Button } from "components/Button";
 
 interface NavbarButtonProps {
   to: string;
@@ -32,8 +30,10 @@ const Navbar: React.FC<NavbarProps> = () => {
     <div className="Navbar">
       <ul>
         <NavbarButton to="/" text="Welcome" />
-        <NavbarButton to="/Home" text="Home" />
+        <NavbarButton to="/home" text="Home" />
         <NavbarButton to="/about" text="About" />
+        <NavbarButton to="/skills" text="Skills" />
+        <NavbarButton to="/projects" text="Projects" />
       </ul>
     </div>
   );
